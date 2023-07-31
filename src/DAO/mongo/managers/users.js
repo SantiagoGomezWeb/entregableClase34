@@ -52,4 +52,4 @@ export default class UserManager {
             return error
         }
     }
-}
+};

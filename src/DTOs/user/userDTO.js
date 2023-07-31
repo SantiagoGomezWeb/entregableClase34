@@ -9,4 +9,4 @@ export default class UserDTO {
         this.role = user.role || 'user'
         this.password = user.password
     }
-}
+};

@@ -1,6 +1,5 @@
 import { ticketModel } from "../models/ticket.js";
 
-
 class TicketManager {
 
     getTickets = async () => {
@@ -63,5 +62,3 @@ class TicketManager {
 };
 
 export default TicketManager;
-
-

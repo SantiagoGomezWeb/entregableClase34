@@ -1,5 +1,4 @@
 import mongoose, { Schema, model } from 'mongoose';
-// import moment from 'moment';
 
 const ticketCollection = 'Tickets';
 
@@ -58,9 +57,4 @@ ticketSchema.pre('save', async function (next) {
     }
 });
 
-
-
-
-export const ticketModel = model(ticketCollection, ticketSchema)
-
-
+export const ticketModel = model(ticketCollection, ticketSchema);

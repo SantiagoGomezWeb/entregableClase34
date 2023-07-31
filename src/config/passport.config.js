@@ -3,7 +3,7 @@ import local from 'passport-local';
 import GitHubStrategy from 'passport-github2'
 
 import { createHash, isValidPassword } from '../utils.js';
-import { cookieExtractor } from '../middleware/auth.js'
+import { cookieExtractor } from '../middleware/auth.js';
 
 import { Strategy, ExtractJwt } from 'passport-jwt';
 import { usersService } from '../DAO/mongo/managers/index.js';
@@ -16,7 +16,7 @@ import CustomError from '../services/errors/customErrors.js'
 import EErrors from '../services/errors/enums.js';
 import { generateUserErrorInfo } from '../services/errors/constant.js';
 
-const localStrategy = local.Strategy
+const localStrategy = local.Strategy;
 
 export const initializePassport = () => {
     passport.use('register', new localStrategy(
@@ -194,13 +194,8 @@ export const initializePassport = () => {
             }
         }
     ))
-}
-
-
-
-
+};
 
 export default {
     initializePassport,
-
 };

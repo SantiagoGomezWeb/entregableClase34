@@ -37,4 +37,4 @@ export const cookieExtractor = (req) =>{
         token = req.cookies['authToken']
     }
     return token;
-}
+};

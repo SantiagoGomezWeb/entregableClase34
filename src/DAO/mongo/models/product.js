@@ -1,6 +1,6 @@
-import mongoose from 'mongoose'
-import mongoosePaginate from 'mongoose-paginate-v2'
-const collection = 'Products'
+import mongoose from 'mongoose';
+import mongoosePaginate from 'mongoose-paginate-v2';
+const collection = 'Products';
 
 const schema = new mongoose.Schema({
     title: {
@@ -22,8 +22,8 @@ const schema = new mongoose.Schema({
     thumbnails: []
 })
 
-schema.plugin(mongoosePaginate)
+schema.plugin(mongoosePaginate);
 
-const productModel = mongoose.model(collection, schema)
+const productModel = mongoose.model(collection, schema);
 
-export default productModel
+export default productModel;

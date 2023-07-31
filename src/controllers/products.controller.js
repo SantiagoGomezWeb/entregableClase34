@@ -75,8 +75,6 @@ const getProducts = async (req, res) => {
         req.logger.error(error)
         return (error);
     }
-
-
 }
 
 const getProductId = async (req, res) => {
