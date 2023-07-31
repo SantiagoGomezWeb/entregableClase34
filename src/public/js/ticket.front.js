@@ -1,9 +1,8 @@
-
 const cartId = document.querySelector('.card-header').id;
-const cardBody = document.querySelector('.card-body')
-const totalBuy = document.getElementById('totalBuy')
-const btnPurchaseCart = document.getElementById('btnPurchaseCart')
-const idBtns = document.querySelectorAll('.btn-danger')
+const cardBody = document.querySelector('.card-body');
+const totalBuy = document.getElementById('totalBuy');
+const btnPurchaseCart = document.getElementById('btnPurchaseCart');
+const idBtns = document.querySelectorAll('.btn-danger');
 
 
 let productsFront = '';

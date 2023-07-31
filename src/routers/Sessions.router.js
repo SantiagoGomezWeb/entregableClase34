@@ -23,4 +23,4 @@ export default class SessionsRouter extends BaseRouter {
 
     }
 
-}
+};

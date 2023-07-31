@@ -1,4 +1,3 @@
-
 import { passportCall } from '../middleware/auth.js';
 import BaseRouter from './Router.js';
 import cartsController from '../controllers/carts.controller.js';
@@ -36,4 +35,3 @@ export default class CartsRouter extends BaseRouter {
 
     }
 };
-

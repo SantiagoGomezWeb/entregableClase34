@@ -45,5 +45,6 @@ const getTickets = async () => {
 
 const main = () => {
     getTickets()
-}
-main()
+};
+
+main();

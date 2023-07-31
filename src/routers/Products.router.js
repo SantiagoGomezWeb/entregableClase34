@@ -21,8 +21,4 @@ export default class ProductsRouter extends BaseRouter {
         this.delete('/:pid', ['ADMIN'], passportCall('jwt', {strategyType: 'jwt'}), productsController.deleteProduct)
     }
 
-}
-
-
-
-// export default this
+};

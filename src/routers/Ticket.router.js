@@ -1,5 +1,5 @@
 import BaseRouter from "./Router.js";
-import ticketControllers from "../controllers/tickets.controllers.js"
+import ticketControllers from "../controllers/tickets.controllers.js";
 import { passportCall } from '../middleware/auth.js';
 
 export default class TicketsRouter extends BaseRouter {
@@ -14,4 +14,4 @@ export default class TicketsRouter extends BaseRouter {
 
         this.put('/:tid', ['AUTH', "USER"], passportCall('jwt', { strategyType: 'jwt' }), ticketControllers.updateTicketController)
     }
-}
+};

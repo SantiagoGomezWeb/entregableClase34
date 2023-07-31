@@ -1,7 +1,5 @@
 import {faker} from '@faker-js/faker/locale/es';
 
-
-
 export const generateUser = () =>{
     const numOfProducts = parseInt(faker.number.int({min:1, max:10}))
     let products = [];
@@ -39,4 +37,4 @@ export const generateProduct = () =>{
         thumbnail: faker.image.urlLoremFlickr({ category: 'food' }),
         
     }
-}
+};

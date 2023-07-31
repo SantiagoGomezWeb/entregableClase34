@@ -1,8 +1,6 @@
 const loginForm = document.getElementById('loginForm');
 const registerBtn = document.getElementById('register');
 
-
-
 loginForm.addEventListener('submit', event => {
     event.preventDefault();
 
@@ -41,13 +39,8 @@ loginForm.addEventListener('submit', event => {
         console.log(error);
 
     }
-
-
 })
-
-
-
 
 registerBtn.addEventListener('click', () => {
     window.location.replace('/register')
-})
+});

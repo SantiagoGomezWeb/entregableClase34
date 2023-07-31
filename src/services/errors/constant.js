@@ -5,7 +5,7 @@ export const generateUserErrorInfo = (user) => {
     * last_name: needs to be a string, received ${user.last_name}
     * email: needs to be a string, received ${user.email}
     `;
-}
+};
 
 export const generateProductErrorInfo = (product) => {
     return `One or more product data is incorrect:
@@ -17,6 +17,4 @@ export const generateProductErrorInfo = (product) => {
     * A boolean type was expected for "status", received ${typeof product.status}
     * A string type was expected for "category", received ${typeof product.category}
     * An array type was expected for "thumbnails", received ${typeof product.thumbnails}`;
-}
-
-
+};

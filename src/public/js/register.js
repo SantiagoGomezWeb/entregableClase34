@@ -27,6 +27,4 @@ registerForm.addEventListener('submit', event => {
       }
 
     })
-
-
-})
+});

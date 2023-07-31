@@ -21,4 +21,4 @@ export default class TicketService {
         return this.dao.updateTicket(tid)
     }
 
-}
+};

@@ -23,4 +23,4 @@ export default class ProductService{
     deleteProductService = (id) => {
         return this.dao.deleteProduct(id)
     }
-}
+};

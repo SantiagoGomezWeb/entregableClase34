@@ -2,8 +2,6 @@ import { passportCall } from '../middleware/auth.js';
 import viewsControllers from '../controllers/views.controllers.js';
 import BaseRouter from "./Router.js";
 
-
-
 export default class ViewsRouter extends BaseRouter {
 
     init() {
@@ -40,5 +38,4 @@ export default class ViewsRouter extends BaseRouter {
         
     }
 
-}
-
+};

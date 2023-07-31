@@ -1,17 +1,12 @@
-const btnLogout = document.getElementById('logout')
+const btnLogout = document.getElementById('logout');
 
-// const ticketsView = document.getElementById('tickets');
-
-const productsPage = document.getElementById('productsPage')
+const productsPage = document.getElementById('productsPage');
 
 const ticketsPurchases = document.getElementById('ticketsPurchases');
-
 
 document.addEventListener('DOMContentLoaded', (event) => {
     console.log('event');
 });
-
-
 
 productsPage.addEventListener('click', () => {
     try {
@@ -59,9 +54,4 @@ try {
 })
 } catch (error) {
     console.error(error);
-}
-
-
-// ticketsView.addEventListener('click', () => {
-//     window.location.href = '/allTickets'
-// })
+};

@@ -20,4 +20,4 @@ export default class ProductService{
     addCartService = (cart) => {
         return this.dao.addCart(cart)
     }
-}
+};
