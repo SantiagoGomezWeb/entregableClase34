@@ -39,7 +39,7 @@ loginForm.addEventListener('submit', event => {
         console.log(error);
 
     }
-})
+});
 
 registerBtn.addEventListener('click', () => {
     window.location.replace('/register')

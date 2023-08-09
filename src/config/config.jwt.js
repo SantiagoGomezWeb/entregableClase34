@@ -1,13 +1,13 @@
 import jwt from 'jsonwebtoken';
 import config from './config.js';
 
-const PRIVATE_KEY = config.privateKey
+const PRIVATE_KEY = config.privateKey;
 
 export const generateToken = (user) => {
     
     const token = jwt.sign(user, PRIVATE_KEY, {expiresIn:'24h'});
     return token;
-}
+};
 
 export const authToken = (req, res, next) => {
     

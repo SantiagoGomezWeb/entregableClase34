@@ -257,7 +257,6 @@ const purchaseCart = async (req, res) => {
 
 };
 
-
 export default {
     getUserCarts,
     getCartId,

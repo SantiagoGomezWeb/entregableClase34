@@ -4,7 +4,7 @@ async function fetchUserCarts() {
     let response = await fetch('/api/carts/usercarts/');
     response = await response.json();
     return response
-}
+};
 
 async function handleData() {
     try {
@@ -26,7 +26,7 @@ async function handleData() {
     } catch (error) {
         console.log(error);
     }
-}
+};
 
 handleData();
 

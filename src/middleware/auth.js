@@ -28,7 +28,7 @@ export const passportCall = (strategy,options={}) =>{
             next();
         })(req,res,next);
     }
-}
+};
 
 export const cookieExtractor = (req) =>{
     let token = null; 

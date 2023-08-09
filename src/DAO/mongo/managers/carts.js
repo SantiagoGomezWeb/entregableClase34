@@ -1,8 +1,6 @@
 import { cartModel } from "../models/cart.js";
 
-
 class CartManager {
-
 
     getCarts = async () => {
         try {
@@ -22,7 +20,7 @@ class CartManager {
             return err.message
         }
 
-    }
+    };
 
     addCart = async (cart) => {
         

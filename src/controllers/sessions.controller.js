@@ -3,7 +3,6 @@ import { transport } from '../utils/mailer.js';
 
 const gitHubCallBack = (req, res) => {
     try {
-        
         const user = {
             name: `${req.user.first_name} ${req.user.last_name}`,
             role: req.user.role,
@@ -12,7 +11,6 @@ const gitHubCallBack = (req, res) => {
             cart: req.user.carts
         }
         
-
         const access_token = generateToken(user)
         
         return res.cookie('authToken', access_token, {
@@ -23,12 +21,10 @@ const gitHubCallBack = (req, res) => {
     } catch (error) {
         return res.sendInternalError(error);
     }
-
 }
 
 const loginPost = async (req, res) => {
     try {
-
         const user = {
             name: `${req.user.first_name} ${req.user.last_name}`,
             role: req.user.role,
@@ -47,7 +43,6 @@ const loginPost = async (req, res) => {
     } catch (error) {
         return res.sendInternalError(error);
     }
-
 }
 
 const registerPost = async (req, res) => {
@@ -59,7 +54,6 @@ const registerPost = async (req, res) => {
 }
 
 const postLogOut = (req, res) => {
-
     try {
         return res.clearCookie('authToken').sendSuccess('logged out successfully')
     } catch (error) {
